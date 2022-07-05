@@ -19,6 +19,11 @@ if (!driversFile) {
 let addresses = readDataFile(addressesFile).split('\n');
 let drivers = readDataFile(driversFile).split('\n');
 
+if(addresses.length !== drivers.length) {
+  console.error("The number of drivers must be the same as the number of addresses.")
+  process.exit(1);
+}
+
 let scores = [];
 
 addresses.forEach((a) => {
