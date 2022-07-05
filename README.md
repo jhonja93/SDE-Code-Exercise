@@ -1,5 +1,7 @@
 # SDE code exercise
 
+This project was made with Node v18.1.0.
+
 To run this project yo need to provide a addresses file and a drivers file like arguments at the moment to execute this Node program, look the following example:
 
 ```
